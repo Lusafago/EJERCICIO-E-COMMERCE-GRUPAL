@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Para que el body ocupe toda la pantalla */
+}
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1;
+    /* Hacer que el contenido principal crezca para empujar el footer hacia abajo */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+    /* Esto permite que el contenido empuje al footer hacia abajo */
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+.form-background {
+    background-color: #f8d058;
+    /* Color de fondo del formulario */
+    padding: 20px;
+    border-radius: 10px;
+    /* Redondear esquinas para un estilo más amigable */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para darle relieve */
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    /* Mantener el footer pegado al final */
+}
+
+
+.honeypot {
+    display: none;
+}
