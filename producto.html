@@ -14,6 +14,32 @@
 <body>
     <header>
         <!-- Barra de navegación usando Bootstrap.-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./IMG/logo.jpg" alt="Logo" width="150" height="150"
+                            class="d-inline-block align-text-top">
+                        <!-- Aquí puedes añadir el nombre o eslogan de la empresa -->
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link active" href="index.html">Inicio</a>
+                            <a class="nav-link" href="producto.html">Productos</a>
+                            <a class="nav-link" href="categorias.html">Categorías</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="btn btn-warning" href="#pedir">¡Haz tu pedido!</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
     </header>
     <main>
         <!-- * Imagen del producto: Usamos una imagen grande a la izquierda para mostrar el producto.
@@ -28,9 +54,44 @@
 
 
     </main>
-    <footer>
-        <!--Podría incluir información de contacto, redes sociales, o derechos de autor.-->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: lusafago-grupo-cilsa@hotmail.com</li>
+                        <li>Teléfono: +123 456 7890</li>
+                        <li>Dirección: Calle Falsa 123, Ciudad</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 text-md-center">
+                    <img src="./IMG/logo.jpg" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
+                    <p>&copy; 2024 LUSAFAST-FOOD <br>
+                        Todos los derechos reservados.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <a target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                            alt="Facebook" width="30">
+                    </a>
+                    <a target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                            alt="Instagram" width="30">
+                    </a>
+                    <a target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn"
+                            width="30">
+                    </a>
+                </div>
+
+            </div>
+        </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
