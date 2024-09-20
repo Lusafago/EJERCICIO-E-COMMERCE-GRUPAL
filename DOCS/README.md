@@ -1,7 +1,7 @@
-# ANTOJITOS - LUSAFAST-FOOD
+#  LUSAFAST-FOOD
 
 ## Descripción del Proyecto
-**ANTOJITOS** es un sitio web de venta de comida rápida diseñado para mostrar y promocionar productos como bebidas y alimentos a través de una interfaz sencilla y atractiva. El proyecto está desarrollado utilizando tecnologías web como **HTML**, **CSS**, **JavaScript**, y el framework **Bootstrap** para asegurar un diseño responsivo y una experiencia de usuario fluida.
+**LUSAFAST-FOOD** es un sitio web de venta de comida rápida diseñado para mostrar y promocionar productos como bebidas y alimentos a través de una interfaz sencilla y atractiva. El proyecto está desarrollado utilizando tecnologías web como **HTML**, **CSS**, **JavaScript**, y el framework **Bootstrap** para asegurar un diseño responsivo y una experiencia de usuario fluida.
 
 ## Tecnologías Utilizadas
 - **HTML5**: Para la estructura del sitio web.

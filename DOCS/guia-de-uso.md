@@ -1,7 +1,7 @@
-# Guía de Uso - ANTOJITOS (LUSAFAST-FOOD)
+# Guía de Uso - (LUSAFAST-FOOD)
 
 ## Descripción del Sitio Web
-El sitio web de **ANTOJITOS** permite a los usuarios explorar una variedad de productos de comida rápida y bebidas, navegar por las distintas categorías y obtener más información sobre cada producto individual. 
+El sitio web de **LUSAFAST-FOOD** permite a los usuarios explorar una variedad de productos de comida rápida y bebidas, navegar por las distintas categorías y obtener más información sobre cada producto individual. 
 
 ### Funcionalidades del Sitio
 1. **Navegar por Productos**:
