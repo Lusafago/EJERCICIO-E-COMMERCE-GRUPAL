@@ -1,0 +1,31 @@
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 190px; /* Ajusta este valor según tus necesidades */
+    margin: 10px;
+}
+
+.card-img-top {
+    height: 140px; /* Ajusta este valor según tus necesidades */
+    object-fit: cover;
+}
+
+
+.carousel-item img {
+    height: 300px; /* Ajusta este valor según tus necesidades */
+    object-fit: cover;
+}
+
+.container mt-5 {
+    width: 400px; /* Ajusta este valor según tus necesidades */
+    margin: 10px auto;
+
+    height: 300px; /* Ajusta este valor según tus necesidades */
+    object-fit: cover;
+    align-items: center;
+    background-color: pink;
+}
+
