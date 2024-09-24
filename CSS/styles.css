@@ -1,4 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho y alto total */
+}
+
+
+
 body {
+    
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -6,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
+    
 }
 
 
@@ -99,13 +108,12 @@ nav .nav-link:hover {
 /*MAIN*/
 
 main {
-    padding: 20px;
+
     flex-grow: 1;
-
-    /* Esto permite que el contenido empuje al footer hacia abajo */
     background: linear-gradient(to right, #ffcc00 50%, #de04f1 50%);
-
+    margin-bottom: 0;
 }
+
 
 main h2 {
     margin-top: 0;
@@ -262,8 +270,10 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: auto;
-    /* Mantener el footer pegado al final */
+    position: relative;
+    clear: both;
 }
+
 
 /* "Honeypot" (que significa "tarro de miel") es una técnica de seguridad.
  
