@@ -303,17 +303,7 @@ lo que permite identificar el envío de spam.  */
     display: none;
 }
 
-.carousel-item {
-    display: flex;
-    justify-content: center;
-}
 
-.carrusel-pequeño {
-    max-width: 100%;
-    height: 15%;
-    margin: 0 auto;
-    /* Centrar el carrusel */
-}
 
 .card {
     width: 190px;
@@ -357,14 +347,21 @@ lo que permite identificar el envío de spam.  */
     object-fit: contain; /* La imagen se verá entera manteniendo su proporción */
 }
 
+/*carrusel*/
 
-.carousel-item img {
-
-    object-fit: cover;
-    height: 80vh;
-    aspect-ratio: 16/9;
+/* Asegura que el contenedor del carrusel ocupe todo el ancho */
+.carousel {
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana del navegador */
+    margin: 0; /* Elimina cualquier margen */
 }
 
+
+.carousel-item img {
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    height: 350px; /* Ajusta la altura que desees */
+    object-fit: cover; /* Cubre todo el contenedor del carrusel */
+    object-position: center; 
+}
 
 
 .oculto {
