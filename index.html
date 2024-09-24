@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon"><!--AQUI IRIA EL ICONO FAVICON-->
-    <link rel="stylesheet" href="./CSS/styles.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./CSS/styles.css">
     <title>LUSAFAST-FOOD</title>
 </head>
 
@@ -19,7 +19,7 @@
         <a class="navbar-brand" href="index.html">
             <img src="./IMG/logo.jpg" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
         </a>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -42,7 +42,7 @@
 
 
     <main>
-        <!--  -->
+        <!-- CARRUSEL -->
 
         <div id="carouselExample" class="carousel slide carrusel-pequeño">
             <div class="carousel-inner ">
@@ -67,14 +67,25 @@
             </button>
         </div>
 
-        <!--  -->
+        <!-- MAIN: IMAGEN CENTRAL DE HAMBRGUESA Y TEXTOS A LOS LADOS -->
         <main>
 
-            <div class="burger-central">   
-              
-                <img src="./IMG/hambur.png" alt="hamburguesa sin fondo" class="img-fluid  ">
-              
+            <div class="burger-section d-flex justify-content-center align-items-center">
+                <div class="text-side txt-izq">
+                    <h3>Lado Izquierdo</h3>
+                    <p>Texto a la izquierda de la hamburguesa.</p>
+                </div>
+
+                <div class="burger-central">
+                    <img src="./IMG/hambur.png" alt="hamburguesa sin fondo" class="img-fluid burger-animation">
+                </div>
+
+                <div class="text-side txt-der">
+                    <h3>Lado Derecho</h3>
+                    <p>Texto a la derecha de la hamburguesa.</p>
+                </div>
             </div>
+
             <!-- Carrusel aquí -->
             <div id="carouselExample" class="carousel slide carrusel-pequeño">
                 <!-- Contenido del carrusel -->
@@ -82,11 +93,13 @@
 
             <!-- Sección de Promociones -->
             <section class="promociones mt-5">
-                <div class="container">
-                    <h2 class="text-center mb-4">¡Promociones Especiales!</h2>
+                <div class="container text-center">
+                    <div class="titulo-promociones text-center mb-4">
+                        <h2 class="text-center">¡Promociones Especiales!</h2>
+                    </div>
                     <div class="row">
                         <!-- Card 1 -->
-                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                             <div class="card card-promos">
                                 <img src="./IMG/Post para Instagram Promoción Helados Orgánico Rosa.png"
                                     class="card-img-top" alt="Promoción 1">
@@ -99,7 +112,7 @@
                         </div>
 
                         <!-- Card 2 -->
-                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                             <div class="card card-promos">
                                 <img src="./IMG/Posteo Instagram Promoción Hamburguesa Rústico Amarillo.png"
                                     class="card-img-top" alt="Promoción 2">
@@ -112,7 +125,7 @@
                         </div>
 
                         <!-- Card 3 -->
-                        <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
                             <div class="card card-promos">
                                 <img src="./IMG/Historia De Instagram Comida Para Empresa Fotografía Multicolor.png"
                                     class="card-img-top" alt="Promoción 3">
@@ -123,23 +136,30 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                            <div class="card card-promos">
+                                <img src="./IMG/pastas.png"
+                                    class="card-img-top" alt="Promoción 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">PROMO 4</h5>
+                                    <p class="card-text">Disfruta de ESTA PROMO por $10.00.</p>
+                                    <a href="#" class="btn btn-primary">¡Ordena ahora!</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
 
 
-    </main>
-
     <footer class="bg-dark text-light py-4">
         <div class="container">
             <div class="row">
 
-                <div class="col-md-4 text-md-center">
-                    <img src="./IMG/logo.jpg" alt="Logo" width="80" height="80" class="d-inline-block align-text-top">
-                    <p>&copy; 2024 LUSAFAST-FOOD <br>
-                        Todos los derechos reservados.</p>
-                </div>
+
                 <div class="col-md-4">
                     <h5>Contacto</h5>
                     <ul class="list-unstyled">
@@ -163,6 +183,12 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn"
                             width="30">
                     </a>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="./IMG/logo.jpg" alt="Logo" width="80" height="80" class="d-inline-block">
+                    <p class="mt-3 align-text-left">&copy; 2024 LUSAFAST-FOOD <br>
+                        Todos los derechos reservados.</p>
                 </div>
 
             </div>
