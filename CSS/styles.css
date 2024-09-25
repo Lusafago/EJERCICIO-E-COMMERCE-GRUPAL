@@ -367,3 +367,34 @@ lo que permite identificar el envío de spam.  */
 .oculto {
     display: hidden;
 }
+
+/* Card productos*/
+
+.card-producto {
+    width: 100%;  /* Las tarjetas tomarán el 100% del ancho de su contenedor padre */
+    max-width: 360px; /* Fija un máximo de ancho */
+    height: 400px;  /* Fija una altura uniforme */
+    margin: 10px auto;  /* Centrar las tarjetas */
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+.card-categoria {
+    width: 100%;  /* Las tarjetas tomarán el 100% del ancho de su contenedor padre */
+    max-width: 320px; /* Fija un máximo de ancho */
+    height: 400px;  /* Fija una altura uniforme */
+    margin: 10px auto;  /* Centrar las tarjetas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-index {
+    width: 100%;  /* Las tarjetas tomarán el 100% del ancho de su contenedor padre */
+    max-width: 490px; /* Fija un máximo de ancho */
+    height: 400px;  /* Fija una altura uniforme */
+    margin: 10px auto;  /* Centrar las tarjetas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
