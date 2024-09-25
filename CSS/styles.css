@@ -1,21 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho y alto total */
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* Asegura que el padding y el borde se incluyan en el ancho y alto total */
 }
 
 
 
 body {
-    
+
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    
+    overflow-x: hidden;
+
 }
 
 
@@ -26,6 +28,7 @@ header {
     padding: 15px;
     display: flex;
     align-items: center;
+    
 
 }
 
@@ -64,7 +67,7 @@ nav ul li a {
 
 
 nav .nav-link {
-  
+
     font-size: 1.2rem;
     color: #fff;
 }
@@ -105,6 +108,7 @@ nav .nav-link:hover {
     background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"%3E%3Cpath stroke="rgba(245, 183, 20, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E') !important;
 
 }
+
 /*****************************************/
 
 
@@ -129,50 +133,101 @@ LOS TEXTOS LATERALES*/
 /* ESTO ES EL CONTENEDOR DONDE ESTA LA IMG CENTRAL DE LA HAMBURGUESA*/
 .burger-section {
     display: flex;
+    flex-direction: row; /* Cambia a column en pantallas más pequeñas */
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     padding: 20px;
 }
 
 /*ESTA ES LA CLASE DEL DIV QUE CONTIENE LA IMG DE LA HAMBURGUESA*/
 .burger-central {
     flex-grow: 2;
-    /*flex-grow significa el espacio que ocupara el elemento en este contenedor*/
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 /*imagen de hamburguesa central*/
 .burger-central img {
-    width: 70%;
+    width: 90%;
     height: auto;
+   
 }
+/* ANIMACION DE GIRAR:*/
+.burger-animation-2:hover {
+    animation: spin 4s ease-out;
+    
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 
 /* ESTOS SON LOS ESTILOS DE LOS TEXTOS LATERALES*/
 
 /*contenedores de los textos laterales*/
 .text-side {
     flex-grow: 1;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
-    max-width: 300px;
+    max-width: 300px; 
 }
+
+.text-side img {
+   
+    height: auto;
+    
+}
+
 
 /*h3 de textos laterales*/
 .text-side h3 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
+   
+    font-size: 2.3rem;
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-side h4 {
+
+    font-size: 2rem;
+    font-family: "Playwrite DE Grund", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*parrafos de textos laterales*/
 .text-side p {
-    font-size: 1rem;
+
     line-height: 1.5;
+    font-size: 1.5rem;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.epigrafe-der {
+    color: #fff;
+}
+.epigrafe-izq {
+    color: #0a0000;
 }
 
 /*texto derecho*/
 .txt-der {
     color: #fbff00;
+
 }
 
 /*texto izquierdo*/
@@ -180,11 +235,13 @@ LOS TEXTOS LATERALES*/
     color: #de04f1;
 }
 
-
+.burger-uno, .pasta-dos, .papas-tres {
+    width: 50%;
+}
 
 /*ANIMACION DE ZOOM: 
 
-.burger-animation {
+.burger-animation-1 {
     animation: scaleUp 2s ease-in-out;
 }
 
@@ -195,24 +252,11 @@ LOS TEXTOS LATERALES*/
     100% {
         transform: scale(1);
     }
-}
+}*/
 
-*/
-/* ANIMACION DE GIRAR:
-.burger-animation {
-    animation: spin 2s ease-in-out;
-}
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
 
-*/
+
 /*Animación de ZOOM Y OPACIDAD
 .burger-animation {
     animation: fadeInZoom 2s ease-in-out;
@@ -230,28 +274,7 @@ LOS TEXTOS LATERALES*/
 }
 */
 
-/*CONTAINER DE LA SECCION PROMOCIONES*/
-#container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
-    flex-grow: 1;
-    
 
-}
-
-.titulo-promociones h2{
-    background: #fff;
-    width: 100%;
-    height: 50%;
-    padding: 20px;
-    text-align: center;
-    margin: auto;
-    text-align: center;
-    font-size: 2rem;
-    border-radius:  25px;
-}
 
 
 
@@ -266,19 +289,42 @@ LOS TEXTOS LATERALES*/
 
 }
 
-/*perfil*/
+/* Perfil */
+.section-perfil {
+    background-color: #160218; /* Mantiene el fondo oscuro del contenedor */
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 #perfil .card {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    background-color: transparent; /* Sin fondo para ver el fondo del contenedor */
+    border: none; /* Elimina el borde de la tarjeta */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Mantiene la sombra */
+    height: 100%; /* Asegura que la tarjeta ocupe todo el alto del contenedor */
+}
+
+#perfil .card-img-top {
+    width: 50%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 #perfil .card-title {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #fff; /* Cambia el color a blanco para mejor visibilidad */
 }
 
 #perfil .card-text {
     font-size: 1rem;
-    color: #666;
+    color: #ccc; /* Cambia el color a un tono más claro para contraste */
+}
+
+/* Botón */
+#perfil .btn-warning {
+    background-color: #ffc107; /* Color del botón */
+    border-color: #ffc107; /* Eliminar borde del botón */
 }
 
 
@@ -305,62 +351,91 @@ lo que permite identificar el envío de spam.  */
 
 
 
-.card {
-    width: 190px;
-    margin: 10px;
+
+
+/*CONTAINER DE LA SECCION PROMOCIONES*/
+#container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    flex-grow: 1;
+
 }
 
-.card-img-top {
-    height: 140px;
-    object-fit: cover;
+.titulo-promociones h2 {
+    background: #fff;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 25px;
 }
-
-/*ESTILOS DEL CONTENEDOR DE LAS PROMOCIONES*/
-/* Estilos del cuerpo de la tarjeta */
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-/* Estilos adicionales para el contenedor de promociones */
+/* Sección de Promociones */
 .promociones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centra las tarjetas en la fila */
-    gap: 20px;  /* Espacio entre las tarjetas */
+    background: linear-gradient(to right, #ffcc00 50%, #de04f1 50%);
+    padding: auto;
+    margin: 0 auto;
 }
 
+/* Estilo de las tarjetas en promociones */
 .card-promos {
-    width: 100%;  /* Las tarjetas tomarán el 100% del ancho de su contenedor padre */
-    max-width: 350px; /* Fija un máximo de ancho */
-    height: 450px;  /* Fija una altura uniforme */
-    margin: 10px auto;  /* Centrar las tarjetas */
+    width: 60%;     
+    height: 100vh; 
+    margin: 20px auto; 
+    padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: #fff; 
+    border: none;
+  
 }
 
 .card-promos img {
     width: 100%;
-    height: 250px;  /* Fija una altura para la imagen */
-    object-fit: contain; /* La imagen se verá entera manteniendo su proporción */
+    height: auto;
+    object-fit: contain;
+
 }
+
+
+/* Títulos de las tarjetas */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    
+}
+
+/* Texto de las tarjetas */
+.card-text p{
+
+    width: 100vw;
+   
+}
+
+/* Botones en las tarjetas */
+
+.btn-primary:hover {
+    background-color: #e0a800; /* Color más oscuro al pasar el mouse */
+    border-color: #e0a800; /* Color del borde al pasar el mouse */
+}
+
+
 
 /*carrusel*/
-
-/* Asegura que el contenedor del carrusel ocupe todo el ancho */
 .carousel {
-    width: 100vw; /* Ocupa el 100% del ancho de la ventana del navegador */
-    margin: 0; /* Elimina cualquier margen */
-}
+    width: 100vw;    
+    margin: 0;}
 
 
 .carousel-item img {
-    width: 100%; /* Ocupa todo el ancho de la ventana */
-    height: 350px; /* Ajusta la altura que desees */
-    object-fit: cover; /* Cubre todo el contenedor del carrusel */
-    object-position: center; 
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
 }
 
 
@@ -371,30 +446,48 @@ lo que permite identificar el envío de spam.  */
 /* Card productos*/
 
 .card-producto {
-    width: 100%;  /* Las tarjetas tomarán el 100% del ancho de su contenedor padre */
-    max-width: 360px; /* Fija un máximo de ancho */
-    height: 400px;  /* Fija una altura uniforme */
-    margin: 10px auto;  /* Centrar las tarjetas */
+    width: 80%;     
+   height: 400px; 
+    margin: 20px auto; 
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    background-color: #fff; 
+    border: none;
 }
+
+.card-producto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
 .card-categoria {
-    width: 100%;  /* Las tarjetas tomarán el 100% del ancho de su contenedor padre */
-    max-width: 320px; /* Fija un máximo de ancho */
-    height: 400px;  /* Fija una altura uniforme */
-    margin: 10px auto;  /* Centrar las tarjetas */
+    width: 100%;
+    max-width: 320px;
+    height: 400px;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .card-index {
-    width: 100%;  /* Las tarjetas tomarán el 100% del ancho de su contenedor padre */
-    max-width: 490px; /* Fija un máximo de ancho */
-    height: 400px;  /* Fija una altura uniforme */
-    margin: 10px auto;  /* Centrar las tarjetas */
+    width: 100%;
+    max-width: 490px;
+    height: 400px;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 767px) {
+    .burger-section {
+        flex-direction: column; /* Cambia a column en pantallas más pequeñas */
+        align-items: center; /* Centrar elementos cuando están apilados */
+    }
 }
