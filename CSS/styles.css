@@ -114,7 +114,7 @@ nav .nav-link:hover {
 
 /*MAIN*/
 
-main {
+#main-index {
 
     flex-grow: 1;
     background: linear-gradient(to right, #ffcc00 50%, #de04f1 50%);
@@ -125,6 +125,7 @@ main {
 main h2 {
     margin-top: 0;
 }
+
 
 
 /*Burger Section: ESTILOS APLICADOS A LA SECCION CENTRAL DONDE ESTA LA IMG DE LA HAMBURGUESA Y 
@@ -257,41 +258,27 @@ LOS TEXTOS LATERALES*/
 
 
 
-/*Animación de ZOOM Y OPACIDAD
-.burger-animation {
-    animation: fadeInZoom 2s ease-in-out;
-}
-
-@keyframes fadeInZoom {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-*/
-
-
-
-
-
-
 /*ESTILOS DEL FORMULARIO*/
 .form-background {
-    background-color: #eedeb7;
+    width: 80%;
+    background-color: #ffcc00;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-
+    margin: 20px auto;
 
 }
 
+#main-contacto {
+    background-color: #de04f1;
+
+}
+
+
+
 /* Perfil */
 .section-perfil {
-    background-color: #160218; /* Mantiene el fondo oscuro del contenedor */
+    background-color: #160218; 
     padding: 20px;
     max-width: 100%;
     margin: 0 auto;
@@ -299,32 +286,32 @@ LOS TEXTOS LATERALES*/
 }
 
 #perfil .card {
-    background-color: transparent; /* Sin fondo para ver el fondo del contenedor */
-    border: none; /* Elimina el borde de la tarjeta */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Mantiene la sombra */
-    height: 100%; /* Asegura que la tarjeta ocupe todo el alto del contenedor */
+    background-color: transparent; 
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    height: 100%;
 }
 
 #perfil .card-img-top {
-    width: 50%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 50%; 
+    height: auto; 
 }
 
 #perfil .card-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff; /* Cambia el color a blanco para mejor visibilidad */
+    color: #fff; 
 }
 
 #perfil .card-text {
     font-size: 1rem;
-    color: #ccc; /* Cambia el color a un tono más claro para contraste */
+    color: #ccc; 
 }
 
 /* Botón */
 #perfil .btn-warning {
-    background-color: #ffc107; /* Color del botón */
-    border-color: #ffc107; /* Eliminar borde del botón */
+    background-color: #ffc107; 
+    border-color: #ffc107; 
 }
 
 
@@ -348,10 +335,6 @@ lo que permite identificar el envío de spam.  */
 .honeypot {
     display: none;
 }
-
-
-
-
 
 /*CONTAINER DE LA SECCION PROMOCIONES*/
 #container {
@@ -406,6 +389,7 @@ lo que permite identificar el envío de spam.  */
 .card-title {
     font-size: 1.5rem;
     font-weight: bold; 
+ 
     
 }
 
@@ -447,13 +431,20 @@ lo que permite identificar el envío de spam.  */
 
 .card-producto {
     width: 80%;     
-   height: 400px; 
+   height: 600px; 
     margin: 20px auto; 
     padding: 10px;
     display: flex;
     flex-direction: column;
     background-color: #fff; 
     border: none;
+    
+}
+
+.title-producto {
+    font-family: "Coiny", system-ui;
+    font-weight: bold;
+
 }
 
 .card-producto img {
@@ -462,16 +453,47 @@ lo que permite identificar el envío de spam.  */
     object-fit: cover;
 }
 
-
+/*cards de categorias*/
 
 .card-categoria {
     width: 100%;
     max-width: 320px;
-    height: 400px;
-    margin: 10px auto;
+    height: 550px;
+    margin: 5px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.card-categoria img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.btn-volver{
+    width: 20%;
+    text-align: center;
+    background-color: #ffc107; 
+    border-color: #ffc107;
+    color:#160218;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+    border-radius: 5px;
+    text-decoration: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #e0a800; /* Color más oscuro al pasar el mouse */
+    border-color: #e0a800; /* Color del borde al pasar el mouse */
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
 }
 
 .card-index {
