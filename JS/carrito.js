@@ -1,4 +1,3 @@
-// carrito.js
 
 // Función para agregar productos al carrito
 function addToCart(productName, price, button) {
@@ -20,12 +19,15 @@ function addToCart(productName, price, button) {
         setTimeout(() => {
             messageDiv.style.display = 'none'; // Finalmente oculta el div
             messageDiv.style.opacity = '1'; // Resetea la opacidad para la próxima vez
-        }, 500); // Este tiempo debe coincidir con la duración de la transición
+        }, 500); 
     }, 2000);
 }
 
 
-// Función para mostrar el carrito
+/* Función para mostrar el carrito: los datos del carrito se guardan localmente en el 
+dispositivo del usuario utilizando localStorage, 
+lo que permite que los datos persistan entre sesiones del navegador.*/
+
 function displayCart() {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartList = document.getElementById('cart-list');

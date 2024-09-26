@@ -9,7 +9,7 @@ El sitio web de **LUSAFAST-FOOD** permite a los usuarios explorar una variedad d
    - Para ver más productos, pueden navegar a la página de **categorías** (`categorias.html`), donde se listan las distintas categorías, como “Bebidas” y “Comida Rápida”.
 
 2. **Ver Detalles del Producto**:
-   - Al hacer clic en un producto, se abrirá la página de detalle (`producto.html`), donde se mostrarán imágenes, descripciones y precios del producto seleccionado.
+   - Al hacer clic en un producto, se abrirá la página de detalle (`producto.html`), donde se mostrarán las variedades de cada uno, imágenes, descripciones y precios del producto seleccionado.
 
 3. **Contacto**:
    - Los usuarios pueden acceder a la página de **contacto** (`contacto.html`), donde encontrarán un formulario para enviar dudas o sugerencias directamente al equipo de **ANTOJITOS**.
@@ -24,12 +24,17 @@ El sitio web de **LUSAFAST-FOOD** permite a los usuarios explorar una variedad d
    - En la página **contacto.html**, puedes completar el formulario de contacto con tu nombre, correo y mensaje.
    - También puedes encontrar nuestra información de contacto en el pie de página de todas las páginas del sitio.
 
-## Futuras Funcionalidades
-- **Realización de pedidos**: En el futuro, los usuarios podrán realizar pedidos directamente desde la página de detalle de productos.
-- **Promociones especiales**: Se planea incluir una sección de ofertas y descuentos exclusivos.
+## Cómo comprar:
+- **Realización de pedidos**: Los usuarios pueden realizar pedidos directamente haciendo clic en el boton de Agregar al carrito. Automáticamente se añadirá el producto seleccionado a su carrito de compras y aparecera un breve mensaje que confirma la transacción.
+
+- **Carrito de compras**: Los usuarios pueden revisar y editar su carrito de compras en la página de (`carrito.html`). Aquí, también pueden eliminar productos individualmente o vaciar todo el carrito.
+
+-**Pagos**: Los usuarios pueden realizar pagos cuando hacen clic en el botón pagar que esta en el carrito. Eso lleva a una página (`pago.html`) para elegir entre pagar con tarjeta o efectivo.
+
+- **Promociones especiales**: Incluye una sección de ofertas y descuentos exclusivos.
 
 ## Planificación de Desarrollo
-### División de Tareas
-- **Diseño y estructura HTML/CSS**: El primer paso será desarrollar un diseño responsivo que use los componentes de Bootstrap para mantener la coherencia visual en diferentes dispositivos.
-- **Lógica y scripts (JS)**: La interactividad del sitio, como las validaciones de formularios y las animaciones, será manejada con JavaScript.
-- **Contenido**: Imágenes de productos, logotipos y textos serán seleccionados y añadidos por una de las integrantes del equipo.
+- **Desarrollo de la página de inicio**: Creación de la página principal con productos destacados y promociones.
+- **Desarrollo de la página de categorías**: Creación de la página de categorías con tarjetas de productos y enlaces a las páginas de detalle.
+- **Desarrollo de la página de detalle de producto**: Creación de la página de detalle de producto con imágenes, descripciones y precios.
+- **Desarrollo de la página de contacto y Footer**: Creación de la página de contacto con formulario de contacto y enlaces a redes sociales.
