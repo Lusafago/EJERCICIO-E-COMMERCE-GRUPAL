@@ -91,3 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 };
 
+// Este boton de volver en pagos, Vuelve a la página anterior en el historial
+function goBack() {
+  window.history.back(); 
+}
