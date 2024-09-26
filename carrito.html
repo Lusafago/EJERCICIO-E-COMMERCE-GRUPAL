@@ -43,36 +43,28 @@
     <main>
         <!-- Contenedor que centrará la tabla -->
         <div class="cart-container">
-            <!-- Hacemos que la tabla sea responsive -->
-            <div class="table-responsive">
-                <table id="cart-table" class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                            <th>Acción</th>
-                        </tr>
-                    </thead>
-                    <tbody id="cart-list">
-                        <!-- Los productos se agregarán aquí -->
-                    </tbody>
-                </table>
-            </div>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-list">
+                    <!-- Los productos se agregarán aquí -->
+                </tbody>
+            </table>
             <h3>Total: $<span id="cart-total">0</span></h3>
-            
-            <!-- Usamos clases de Bootstrap para mejorar la responsividad -->
-            <div class="d-flex justify-content-between">
-                <button id="clear-cart" class="btn btn-danger btn-sm">Vaciar Carrito</button>
-                <button id="pay-btn" class="btn btn-success btn-sm">Pagar</button>
-            </div>
-    
+            <button id="clear-cart">Vaciar Carrito</button>
+            <!-- Nuevo botón para pagar -->
+            <button id="pay-btn">Pagar</button>
             <div class="boton-producto center">
-                <button class="btn btn-secondary mt-3 btn-volver btn-sm" onclick="goBack()">Volver</button>
+                <button class="btn btn-secondary mt-3 btn-volver" onclick="goBack()">Volver</button>
             </div>
         </div>
+
     </main>
-    
-    
 
     <footer class="bg-dark text-light py-4">
         <div class="container">
