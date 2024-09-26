@@ -90,14 +90,47 @@ button:hover {
 }
 /* Estilo del contenedor de pago */
 .payment-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin: 50px auto;
 }
 
+#card-payment {
+    background-color: #007ebb;
+    color: white;
+    font-weight: bold;
+}
+#card-payment:hover {
+    background-color:black;
+    color: white;
+}
+
+#cash-payment{
+    background-color:#4CAF50;
+    color: white;
+    font-weight: bold; 
+}
+#cash-payment:hover {
+    background-color:black;
+    color: white;
+}
 
 #payment-message {
-    font-size: 20px;
-    color: rgb(1, 26, 1);
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#e0a800;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;  
+    font-size: 2.3rem;
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
 }
 
 .message {
@@ -258,7 +291,6 @@ LOS TEXTOS LATERALES*/
 .burger-section {
     display: flex;
     flex-direction: row;
-    /* Cambia a column en pantallas más pequeñas */
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -394,7 +426,13 @@ LOS TEXTOS LATERALES*/
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
+    font-weight: bold;
 
+}
+
+.title-form  {
+    background-color: #fafaf8;
+    border-radius: 10px;
 }
 
 #main-contacto {
@@ -402,6 +440,15 @@ LOS TEXTOS LATERALES*/
 
 }
 
+.btn-form {
+    background-color: #007ebb;
+    color: white;
+    font-weight: bold;
+}
+.btn-form:hover{
+    background-color: #4CAF50;
+    color: white;
+}
 
 
 /* Perfil */
@@ -454,6 +501,21 @@ footer {
     clear: both;
 }
 
+.redes img {
+    display: inline-block;
+   
+    gap: 10px;
+}
+
+.redes a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: #ffcc00;
+}
 
 /* "Honeypot" (que significa "tarro de miel") es una técnica de seguridad.
  
@@ -642,6 +704,10 @@ lo que permite identificar el envío de spam.  */
 .card-body {
     overflow: hidden;
 }
+
+/*estilos de pago*/
+
+
 
 /* Media query para pantallas pequeñas */
 /* Estilos para el menú desplegable en dispositivos móviles o colapsado */
