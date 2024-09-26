@@ -42,242 +42,248 @@
         </nav>
 
     </header>
-<main>
-    <!-- Primer Contenedor de Hamburguesas-->
-    <div id="contenedor1" class="oculto">
-        <div class="container mt-5">
-            <div class="row">
+    <main>
+        <!-- Primer Contenedor de Hamburguesas-->
+        <div id="contenedor1" class="oculto">
+            <div class="container mt-5">
+                <div class="row">
 
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/hamburguesa/1.png" alt="Imagen 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Hamburguesa con papas</h5>
-                            <p class="card-text">¡Probá esta combinación clásica que nunca falla!</p>
-                            <h4>Precio: $8.900</h4>
-                            <button class="btn btn-primary"
-                                onclick="addToCart('Hamburguesa con papas', 8900, this)">Agregar al carrito</button>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/hamburguesa/1.png" alt="Imagen 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Hamburguesa con papas</h5>
+                                <p class="card-text">¡Probá esta combinación clásica que nunca falla!</p>
+                                <h4>Precio: $8.900</h4>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Hamburguesa con papas', 8900, this)">Agregar al carrito</button>
+                            </div>
+
                         </div>
-                     
+                        <div class="message"></div>
                     </div>
-                    <div class="message"></div>
+
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/hamburguesa/2.png" alt="Imagen 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Extra Cheddar</h5>
+                                <p class="card-text">Una hamburguesa con una generosa capa de queso
+                                    cheddar extra derretido. La combinación perfecta!.</p>
+                                <h4>Precio: $7.500</h4>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Hamburguesa con Extra Cheddar', 7500, this)">Agregar al
+                                    carrito</button>
+                            </div>
+
+                        </div>
+                        <div class="message"></div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/hamburguesa/3.png" alt="Imagen 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Hamburguesa Vegana</h5>
+                                <p class="card-text"> ¡Vení y prueba esta opción vegana que te encantará</p>
+                                <h4>Precio: $7.000</h4>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Hamburguesa Vegana', 7000, this)">Agregar al carrito</button>
+                            </div>
+
+                        </div>
+                        <div class="message"></div>
+                    </div>
+
                 </div>
-
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/hamburguesa/2.png" alt="Imagen 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Extra Cheddar</h5>
-                            <p class="card-text">Una hamburguesa con una generosa capa de queso
-                                cheddar extra derretido. La combinación perfecta!.</p>
-                            <h4>Precio: $7.500</h4>
-                            <button class="btn btn-primary"
-                                onclick="addToCart('Hamburguesa con Extra Cheddar', 7500, this)">Agregar al
-                                carrito</button>
-                        </div>
-                   
-                    </div>
-                    <div class="message"></div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/hamburguesa/3.png" alt="Imagen 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Hamburguesa Vegana</h5>
-                            <p class="card-text"> ¡Vení y prueba esta opción vegana que te encantará</p>
-                            <h4>Precio: $7.000</h4>
-                            <button class="btn btn-primary"
-                                onclick="addToCart('Hamburguesa Vegana', 7000, this)">Agregar al carrito</button>
-                        </div>
-                  
-                    </div>
-                    <div class="message"></div>
-                </div>
-
-            </div>
-            <div>
-                <a href="producto.html" class="btn btn-secondary mt-3 btn-volver">Volver a Productos</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Segundo Contenedor pastas -->
-    <div id="contenedor2" class="oculto">
-        <div class="container mt-5">
-            <div class="row">
-
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/pasta/4.png" alt="Imagen 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Penne Rigati</h5>
-                            <p class="card-text">Saborea la perfección con nuestra pasta penne rigatti, cocinada al
-                                dente y bañada en salsas irresistibles.</p>
-                            <h4>Precio: $8.300</h4>
-                            <button class="btn btn-primary" onclick="addToCart('Penne Rigati', 8300, this)">Agregar al carrito</button>
-                        </div>
-                   
-                    </div>
-                    <div class="message"></div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/pasta/5.png" alt="Imagen 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Spaguettis</h5>
-                            <p class="card-text">Disfruta de nuestro spaghetti, bañado en una rica salsa roja y
-                                acompañado de tomates cherry.</p>
-                            <h4>Precio: $7.500</h4>
-                            <button class="btn btn-primary" onclick="addToCart('Spaguettis con tomates cherry', 7500, this)">Agregar al carrito</button>
-                        </div>
-                 
-                    </div>
-                    <div class="message"></div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/pasta/6.png" alt="Imagen 6">
-                        <div class="card-body">
-                            <h5 class="card-title">Spaguetti con Albondigas</h5>
-                            <p class="card-text">Disfruta de nuestros espaguetis con albóndigas, la combinación de
-                                perfecta.</p>
-                            <h4>Precio: $9.500</h4>
-                            <button class="btn btn-primary"
-                                onclick="addToCart('Spaguetti con Albondigas', 9500, this)">Agregar al carrito</button>
-                        </div>
-                 
-                    </div>
-                    <div class="message"></div>
-                </div>
-
-            </div>
-            <div>
-                <a href="producto.html" class="btn btn-secondary mt-3 btn-volver">Volver a Productos</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Tercer Contenedor bebidas-->
-    <div id="contenedor3" class="oculto">
-        <div class="container mt-5">
-            <div class="row">
-
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/bebida/7.png" alt="Imagen 7">
-                        <div class="card-body">
-                            <h5 class="card-title">Gaseosas</h5>
-                            <p class="card-text">Refresca tu día con nuestras gaseosas burbujeantes y llenas de
-                                sabor.</p>
-                            <h4>Precio: $3.500</h4>
-                            <button class="btn btn-primary"
-                                onclick="addToCart('Gaseosa: coca, fanta, sprite', 3500, this)">Agregar al carrito</button>
-                        </div>
-                       
-                    </div>
-                    <div class="message"></div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/bebida/8.png" alt="Imagen 8">
-                        <div class="card-body">
-                            <h5 class="card-title">Cervezas</h5>
-                            <p class="card-text">Disfruta de nuestras cervezas bien frías, perfectas para cualquier
-                                ocasión.</p>
-                            <h4>Precio: $4.500</h4>
-                            <button class="btn btn-primary"
-                                onclick="addToCart('Cerveza 500 ml', 4500, this)">Agregar al carrito</button>
-                        </div>
-                
-                    </div>
-                    <div class="message"></div>
-                </div>
-
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/bebida/9.png" alt="Imagen 9">
-                        <div class="card-body">
-                            <h5 class="card-title">Aguas Saborizadas</h5>
-                            <p class="card-text">Estas aguas saborizadas son perfectas para
-                                cualquier momento, deliciosas sin calorías adicionales.</p>
-                            <h4>Precio: $2.500</h4>
-                            <button class="btn btn-primary"
-                                onclick="addToCart('Agua saborizada', 2500, this)">Agregar al carrito</button>
-                        </div>
-                    
-                    </div>
-                    <div class="message"></div>
+                <div>
+                    <a href="producto.html" class="btn btn-secondary mt-3 btn-volver">Volver a Productos</a>
                 </div>
             </div>
         </div>
-        <a href="producto.html" class="btn btn-secondary mt-3 btn-volver">Volver a Productos</a>
-    </div>
 
-    <!-- Cuarto Contenedor postres -->
-    <div id="contenedor4" class="oculto">
-        <div class="container mt-5">
-            <div class="row">
+        <!-- Segundo Contenedor pastas -->
+        <div id="contenedor2" class="oculto">
+            <div class="container mt-5">
+                <div class="row">
 
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/postres/10.png" alt="Imagen 10">
-                        <div class="card-body">
-                            <h5 class="card-title">Cheesecake de Frutilla</h5>
-                            <p class="card-text">Este cheesecake de frutilla es una
-                                delicia! No dejes de probarla!</p>
-                            <h4>Precio: $2.900</h4>
-                            <button class="btn btn-primary"
-                                onclick="addToCart('Cheesecake de Frutilla', 2900, this)">Agregar al carrito</button>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/pasta/4.png" alt="Imagen 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Penne Rigati</h5>
+                                <p class="card-text">Saborea la perfección con nuestra pasta penne rigatti, cocinada al
+                                    dente y bañada en salsas irresistibles.</p>
+                                <h4>Precio: $8.300</h4>
+                                <button class="btn btn-primary" onclick="addToCart('Penne Rigati', 8300, this)">Agregar
+                                    al carrito</button>
+                            </div>
+
                         </div>
-                       
+                        <div class="message"></div>
                     </div>
-                    <div class="message"></div>
-                </div>
 
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/postres/11.png" alt="Imagen 11">
-                        <div class="card-body">
-                            <h5 class="card-title">Copa Helada</h5>
-                            <p class="card-text">Disfruta de la combinación perfecta de texturas con nuestra copa
-                                helada de tres sabores”</p>
-                            <h4>Precio: $3.200</h4>
-                            <button class="btn btn-primary" onclick="addToCart('Copa helada', 3200, this)">Agregar
-                                al carrito</button>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/pasta/5.png" alt="Imagen 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Spaguettis</h5>
+                                <p class="card-text">Disfruta de nuestro spaghetti, bañado en una rica salsa roja y
+                                    acompañado de tomates cherry.</p>
+                                <h4>Precio: $7.500</h4>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Spaguettis con tomates cherry', 7500, this)">Agregar al
+                                    carrito</button>
+                            </div>
+
                         </div>
-                      
+                        <div class="message"></div>
                     </div>
-                    <div class="message"></div>
-                </div>
 
-                <div class="col-12 col-lg-4 col-md-6 col-sm-12">
-                    <div class="card text-center card-categoria product-card">
-                        <img class="card-img-top" src="./IMG/postres/12.png" alt="Imagen 12">
-                        <div class="card-body">
-                            <h5 class="card-title">Torta de Chocolate</h5>
-                            <p class="card-text">Esta torta de chocolate es una delicia rica y esponjosa que se
-                                derrite en tu boca.</p>
-                            <h4>Precio: $4.200</h4>
-                            <button class="btn btn-primary"
-                                onclick="addToCart('Torta de chocolate', 4200, this)">Agregar
-                                al carrito</button>
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/pasta/6.png" alt="Imagen 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Spaguetti con Albondigas</h5>
+                                <p class="card-text">Disfruta de nuestros espaguetis con albóndigas, la combinación de
+                                    perfecta.</p>
+                                <h4>Precio: $9.500</h4>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Spaguetti con Albondigas', 9500, this)">Agregar al
+                                    carrito</button>
+                            </div>
+
                         </div>
-                      
+                        <div class="message"></div>
                     </div>
-                    <div class="message"></div>
-                </div>
 
-            </div>
-            <div class="boton-producto center">
-                <a href="producto.html" class="btn btn-secondary mt-3 btn-volver">Volver a Productos</a>
+                </div>
+                <div>
+                    <a href="producto.html" class="btn btn-secondary mt-3 btn-volver">Volver a Productos</a>
+                </div>
             </div>
         </div>
-    </div>
-</main>
+
+        <!-- Tercer Contenedor bebidas-->
+        <div id="contenedor3" class="oculto">
+            <div class="container mt-5">
+                <div class="row">
+
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/bebida/7.png" alt="Imagen 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Gaseosas</h5>
+                                <p class="card-text">Refresca tu día con nuestras gaseosas burbujeantes y llenas de
+                                    sabor.</p>
+                                <h4>Precio: $3.500</h4>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Gaseosa: coca, fanta, sprite', 3500, this)">Agregar al
+                                    carrito</button>
+                            </div>
+
+                        </div>
+                        <div class="message"></div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/bebida/8.png" alt="Imagen 8">
+                            <div class="card-body">
+                                <h5 class="card-title">Cervezas</h5>
+                                <p class="card-text">Disfruta de nuestras cervezas bien frías, perfectas para cualquier
+                                    ocasión.</p>
+                                <h4>Precio: $4.500</h4>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Cerveza 500 ml', 4500, this)">Agregar al carrito</button>
+                            </div>
+
+                        </div>
+                        <div class="message"></div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/bebida/9.png" alt="Imagen 9">
+                            <div class="card-body">
+                                <h5 class="card-title">Aguas Saborizadas</h5>
+                                <p class="card-text">Estas aguas saborizadas son perfectas para
+                                    cualquier momento, deliciosas sin calorías adicionales.</p>
+                                <h4>Precio: $2.500</h4>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Agua saborizada', 2500, this)">Agregar al carrito</button>
+                            </div>
+
+                        </div>
+                        <div class="message"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="producto.html" class="btn btn-secondary mt-3 btn-volver">Volver a Productos</a>
+        </div>
+
+        <!-- Cuarto Contenedor postres -->
+        <div id="contenedor4" class="oculto">
+            <div class="container mt-5">
+                <div class="row">
+
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/postres/10.png" alt="Imagen 10">
+                            <div class="card-body">
+                                <h5 class="card-title">Cheesecake de Frutilla</h5>
+                                <p class="card-text">Este cheesecake de frutilla es una
+                                    delicia! No dejes de probarla!</p>
+                                <h4>Precio: $2.900</h4>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Cheesecake de Frutilla', 2900, this)">Agregar al
+                                    carrito</button>
+                            </div>
+
+                        </div>
+                        <div class="message"></div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/postres/11.png" alt="Imagen 11">
+                            <div class="card-body">
+                                <h5 class="card-title">Copa Helada</h5>
+                                <p class="card-text">Disfruta de la combinación perfecta de texturas con nuestra copa
+                                    helada de tres sabores”</p>
+                                <h4>Precio: $3.200</h4>
+                                <button class="btn btn-primary" onclick="addToCart('Copa helada', 3200, this)">Agregar
+                                    al carrito</button>
+                            </div>
+
+                        </div>
+                        <div class="message"></div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 col-md-6 col-sm-12">
+                        <div class="card text-center card-categoria product-card">
+                            <img class="card-img-top" src="./IMG/postres/12.png" alt="Imagen 12">
+                            <div class="card-body">
+                                <h5 class="card-title">Torta de Chocolate</h5>
+                                <p class="card-text">Esta torta de chocolate es una delicia rica y esponjosa que se
+                                    derrite en tu boca.</p>
+                                <h4>Precio: $4.200</h4>
+                                <button class="btn btn-primary"
+                                    onclick="addToCart('Torta de chocolate', 4200, this)">Agregar
+                                    al carrito</button>
+                            </div>
+
+                        </div>
+                        <div class="message"></div>
+                    </div>
+
+                </div>
+                <div class="boton-producto center">
+                    <a href="producto.html" class="btn btn-secondary mt-3 btn-volver">Volver a Productos</a>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="bg-dark text-light py-4">
         <div class="container">
@@ -289,21 +295,21 @@
                     <ul class="list-unstyled">
                         <li>Email: lusafago-grupo-cilsa@hotmail.com</li>
                         <li>Teléfono: +123 456 7890</li>
-                        <li>Dirección: Calle Falsa 123, Ciudad</li>
+                        <li>Dirección: Calle Falsa 123, Ciudad Dev</li>
                     </ul>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 redes">
                     <h5>Síguenos</h5>
-                    <a target="_blank">
+                    <a href="https://www.facebook.com/?locale=es_LA">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
                             alt="Facebook" width="30">
                     </a>
-                    <a target="_blank">
+                    <a href="https://www.instagram.com/">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
                             alt="Instagram" width="30">
                     </a>
-                    <a target="_blank">
+                    <a href="https://www.linkedin.com/">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn"
                             width="30">
                     </a>
