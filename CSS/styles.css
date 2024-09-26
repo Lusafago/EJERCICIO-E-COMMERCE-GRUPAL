@@ -589,23 +589,24 @@ lo que permite identificar el envío de spam.  */
 }
 
 .btn-volver {
-    width: 20%;
+    width: 100%; /* Cambia el ancho al 100% para que ocupe todo el espacio disponible */
+    max-width: 300px; /* Establece un ancho máximo para evitar que sea demasiado grande en pantallas grandes */
     text-align: center;
     background-color: #007ebb;
     border-color: #007ebb;
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
-
     border-radius: 5px;
     text-decoration: none;
-
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px auto;
+    margin: 10px auto; /* Centro el botón con margen automático */
     transition: background-color 0.3s ease;
+    padding: 10px; /* Añadir algo de padding para mejor apariencia */
 }
+
 
 .btn-volver:hover {
     background-color: black;
