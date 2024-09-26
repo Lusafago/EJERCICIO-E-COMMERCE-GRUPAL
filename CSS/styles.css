@@ -483,6 +483,7 @@ lo que permite identificar el envío de spam.  */
 .card-promos {
     width: 60%;
     height: 100vh;
+    max-height: max-content;
     margin: 20px auto;
     padding: 10px;
     display: flex;
