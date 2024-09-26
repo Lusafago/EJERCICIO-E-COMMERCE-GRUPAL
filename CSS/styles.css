@@ -22,40 +22,45 @@ body {
 
 
 /*ESTILOS DEL HEADER*/
+/* Asegura que el header se expanda con el contenido */
 header {
     background-color: #1a1617d1;
     color: #ffffff;
     padding: 15px;
     display: flex;
     align-items: center;
-    
-
+    flex-wrap: wrap; /* Permite que los elementos dentro del header se acomoden en varias líneas si es necesario */
+    overflow: visible; /* Asegura que el contenido adicional sea visible y no genere scroll */
 }
 
-/*MARGEN DERECHO DE LOGO*/
+/* Margen derecho del logo */
 header .navbar-brand {
     margin-right: 20px;
 }
 
-/*BARRA DE NAVEGACION*/
+/* Barra de navegación */
+/* Asegura que el menú desplegable no genere scroll al expandirse */
 nav {
     background-color: #1a1617d1;
     padding: 5px;
     flex-grow: 1;
-    height: 100px;
-
+    height: auto; /* Cambia a auto para que el nav crezca según el contenido */
 }
+
+.collapse {
+    overflow: visible; /* Evita el scroll cuando el menú se despliega */
+}
+
+
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-
 }
 
 nav ul li {
-
     margin: 0 15px;
 }
 
@@ -64,27 +69,24 @@ nav ul li a {
     text-decoration: none;
 }
 
-
-
 nav .nav-link {
-
     font-size: 1.2rem;
     color: #fff;
 }
 
 nav .nav-link:hover {
-
     color: #f5b714;
 }
-
 
 .navbar-nav {
     flex-direction: row;
     justify-content: first baseline;
     width: 100%;
     gap: 30px;
-
+    overflow: visible; /* Asegura que no haya scroll innecesario */
 }
+
+
 
 .navbar-nav .nav-item {
     margin-left: 20px;
@@ -444,6 +446,7 @@ lo que permite identificar el envío de spam.  */
 .title-producto {
     font-family: "Coiny", system-ui;
     font-weight: bold;
+    overflow: hidden;
 
 }
 
@@ -507,9 +510,34 @@ lo que permite identificar el envío de spam.  */
 }
 
 /* Media query para pantallas pequeñas */
+/* Estilos para el menú desplegable en dispositivos móviles o colapsado */
+@media (max-width: 992px) { 
+    /* Asegura que el nav se expanda verticalmente y sin scroll en pantallas pequeñas */
+    .navbar-nav {
+        flex-direction: column; /* Cambia a columna en dispositivos más pequeños */
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav .btn {
+        margin-top: 10px;
+    }
+
+    /* Asegura que el contenedor no tenga límite de altura en pantallas pequeñas */
+    .collapse {
+        height: auto; /* Permite que la altura se ajuste al contenido */
+        overflow: visible; /* Evita el scroll */
+    }
+}
+
 @media (max-width: 767px) {
     .burger-section {
         flex-direction: column; /* Cambia a column en pantallas más pequeñas */
         align-items: center; /* Centrar elementos cuando están apilados */
     }
 }
+
