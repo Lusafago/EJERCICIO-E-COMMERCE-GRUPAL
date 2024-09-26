@@ -546,6 +546,9 @@ lo que permite identificar el envío de spam.  */
     text-align: center;
     font-size: 2rem;
     border-radius: 25px;
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Sección de Promociones */
