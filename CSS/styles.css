@@ -6,7 +6,109 @@
     /* Asegura que el padding y el borde se incluyan en el ancho y alto total */
 }
 
+/*seccion de carrito*/
+/* Contenedor que centrará la tabla */
+.cart-container {
+    width: 80%; /* Ajusta el ancho según lo necesites */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
 
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.product-card {
+
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+#cart-list div {
+    margin: 10px 0;
+}
+#clear-cart {
+    background-color: #de04f1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+#clear-cart:hover {
+background-color: black;
+}
+#pay-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+#pay-btn:hover{
+    background-color:  #f5b714;
+    color: black;
+}
+
+button {
+    background-color: #f44336; /* Rojo para eliminar */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #080000;
+    color: white;
+}
+/* Estilo del contenedor de pago */
+.payment-container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+#payment-message {
+    font-size: 20px;
+    color: rgb(1, 26, 1);
+}
+
+.message {
+    margin-top: 10px;
+    color: green;
+    font-weight: bold; 
+    transition: opacity 0.5s ease;
+    display: none; 
+}
+
+/**/
 
 body {
 
@@ -29,8 +131,10 @@ header {
     padding: 15px;
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos dentro del header se acomoden en varias líneas si es necesario */
-    overflow: visible; /* Asegura que el contenido adicional sea visible y no genere scroll */
+    flex-wrap: wrap;
+    /* Permite que los elementos dentro del header se acomoden en varias líneas si es necesario */
+    overflow: visible;
+    /* Asegura que el contenido adicional sea visible y no genere scroll */
 }
 
 /* Margen derecho del logo */
@@ -44,11 +148,13 @@ nav {
     background-color: #1a1617d1;
     padding: 5px;
     flex-grow: 1;
-    height: auto; /* Cambia a auto para que el nav crezca según el contenido */
+    height: auto;
+    /* Cambia a auto para que el nav crezca según el contenido */
 }
 
 .collapse {
-    overflow: visible; /* Evita el scroll cuando el menú se despliega */
+    overflow: visible;
+    /* Evita el scroll cuando el menú se despliega */
 }
 
 
@@ -83,7 +189,8 @@ nav .nav-link:hover {
     justify-content: first baseline;
     width: 100%;
     gap: 30px;
-    overflow: visible; /* Asegura que no haya scroll innecesario */
+    overflow: visible;
+    /* Asegura que no haya scroll innecesario */
 }
 
 
@@ -136,9 +243,10 @@ LOS TEXTOS LATERALES*/
 /* ESTO ES EL CONTENEDOR DONDE ESTA LA IMG CENTRAL DE LA HAMBURGUESA*/
 .burger-section {
     display: flex;
-    flex-direction: row; /* Cambia a column en pantallas más pequeñas */
+    flex-direction: row;
+    /* Cambia a column en pantallas más pequeñas */
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     padding: 20px;
 }
 
@@ -154,12 +262,13 @@ LOS TEXTOS LATERALES*/
 .burger-central img {
     width: 90%;
     height: auto;
-   
+
 }
+
 /* ANIMACION DE GIRAR:*/
 .burger-animation-2:hover {
     animation: spin 4s ease-out;
-    
+
 }
 
 @keyframes spin {
@@ -180,22 +289,22 @@ LOS TEXTOS LATERALES*/
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    max-width: 300px; 
+    max-width: 300px;
 }
 
 .text-side img {
-   
+
     height: auto;
-    
+
 }
 
 
 /*h3 de textos laterales*/
 .text-side h3 {
-   
+
     font-size: 2.3rem;
     font-family: "Coiny", system-ui;
     font-weight: 400;
@@ -223,6 +332,7 @@ LOS TEXTOS LATERALES*/
 .epigrafe-der {
     color: #fff;
 }
+
 .epigrafe-izq {
     color: #0a0000;
 }
@@ -238,7 +348,9 @@ LOS TEXTOS LATERALES*/
     color: #de04f1;
 }
 
-.burger-uno, .pasta-dos, .papas-tres {
+.burger-uno,
+.pasta-dos,
+.papas-tres {
     width: 50%;
 }
 
@@ -280,7 +392,7 @@ LOS TEXTOS LATERALES*/
 
 /* Perfil */
 .section-perfil {
-    background-color: #160218; 
+    background-color: #160218;
     padding: 20px;
     max-width: 100%;
     margin: 0 auto;
@@ -288,32 +400,32 @@ LOS TEXTOS LATERALES*/
 }
 
 #perfil .card {
-    background-color: transparent; 
+    background-color: transparent;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     height: 100%;
 }
 
 #perfil .card-img-top {
-    width: 50%; 
-    height: auto; 
+    width: 50%;
+    height: auto;
 }
 
 #perfil .card-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fff; 
+    color: #fff;
 }
 
 #perfil .card-text {
     font-size: 1rem;
-    color: #ccc; 
+    color: #ccc;
 }
 
 /* Botón */
 #perfil .btn-warning {
-    background-color: #ffc107; 
-    border-color: #ffc107; 
+    background-color: #ffc107;
+    border-color: #ffc107;
 }
 
 
@@ -359,6 +471,7 @@ lo que permite identificar el envío de spam.  */
     font-size: 2rem;
     border-radius: 25px;
 }
+
 /* Sección de Promociones */
 .promociones {
     background: linear-gradient(to right, #ffcc00 50%, #de04f1 50%);
@@ -368,15 +481,15 @@ lo que permite identificar el envío de spam.  */
 
 /* Estilo de las tarjetas en promociones */
 .card-promos {
-    width: 60%;     
-    height: 100vh; 
-    margin: 20px auto; 
+    width: 60%;
+    height: 100vh;
+    margin: 20px auto;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    background-color: #fff; 
+    background-color: #fff;
     border: none;
-  
+
 }
 
 .card-promos img {
@@ -389,32 +502,33 @@ lo que permite identificar el envío de spam.  */
 
 /* Títulos de las tarjetas */
 .card-title {
-    font-size: 1.5rem;
-    font-weight: bold; 
- 
-    
+    font-weight: bold;
+
+
 }
 
 /* Texto de las tarjetas */
-.card-text p{
-
+.card-text p {
     width: 100vw;
-   
+
 }
 
 /* Botones en las tarjetas */
 
 .btn-primary:hover {
-    background-color: #e0a800; /* Color más oscuro al pasar el mouse */
-    border-color: #e0a800; /* Color del borde al pasar el mouse */
+    background-color: #e0a800;
+    /* Color más oscuro al pasar el mouse */
+    border-color: #e0a800;
+    /* Color del borde al pasar el mouse */
 }
 
 
 
 /*carrusel*/
 .carousel {
-    width: 100vw;    
-    margin: 0;}
+    width: 100vw;
+    margin: 0;
+}
 
 
 .carousel-item img {
@@ -432,15 +546,15 @@ lo que permite identificar el envío de spam.  */
 /* Card productos*/
 
 .card-producto {
-    width: 80%;     
-   height: 600px; 
-    margin: 20px auto; 
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    background-color: #fff; 
+    background-color: #fff;
     border: none;
-    
+
 }
 
 .title-producto {
@@ -467,24 +581,25 @@ lo que permite identificar el envío de spam.  */
     flex-direction: column;
     align-items: center;
 }
+
 .card-categoria img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-.btn-volver{
+.btn-volver {
     width: 20%;
     text-align: center;
-    background-color: #ffc107; 
-    border-color: #ffc107;
-    color:#160218;
+    background-color: #007ebb;
+    border-color: #007ebb;
+    color: white;
     font-weight: bold;
     font-size: 1.2rem;
-    
+
     border-radius: 5px;
     text-decoration: none;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -493,8 +608,7 @@ lo que permite identificar el envío de spam.  */
 }
 
 .btn-volver:hover {
-    background-color: #e0a800; /* Color más oscuro al pasar el mouse */
-    border-color: #e0a800; /* Color del borde al pasar el mouse */
+    background-color: black;
     margin: 0 auto;
     transition: background-color 0.3s ease;
 }
@@ -509,12 +623,18 @@ lo que permite identificar el envío de spam.  */
     align-items: center;
 }
 
+.card-body {
+    overflow: hidden;
+}
+
 /* Media query para pantallas pequeñas */
 /* Estilos para el menú desplegable en dispositivos móviles o colapsado */
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
+
     /* Asegura que el nav se expanda verticalmente y sin scroll en pantallas pequeñas */
     .navbar-nav {
-        flex-direction: column; /* Cambia a columna en dispositivos más pequeños */
+        flex-direction: column;
+        /* Cambia a columna en dispositivos más pequeños */
         align-items: flex-start;
     }
 
@@ -529,15 +649,18 @@ lo que permite identificar el envío de spam.  */
 
     /* Asegura que el contenedor no tenga límite de altura en pantallas pequeñas */
     .collapse {
-        height: auto; /* Permite que la altura se ajuste al contenido */
-        overflow: visible; /* Evita el scroll */
+        height: auto;
+        /* Permite que la altura se ajuste al contenido */
+        overflow: visible;
+        /* Evita el scroll */
     }
 }
 
 @media (max-width: 767px) {
     .burger-section {
-        flex-direction: column; /* Cambia a column en pantallas más pequeñas */
-        align-items: center; /* Centrar elementos cuando están apilados */
+        flex-direction: column;
+        /* Cambia a column en pantallas más pequeñas */
+        align-items: center;
+        /* Centrar elementos cuando están apilados */
     }
 }
-
