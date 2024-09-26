@@ -8,7 +8,7 @@ function addToCart(productName, price, button) {
     localStorage.setItem('cart', JSON.stringify(cart));
 
     // Selecciona el div de mensaje correspondiente
-    const messageDiv = button.closest('.col-12').querySelector('.message');
+    const messageDiv = button.closest('.col-12').querySelector('.message, .message-promos-uno, .message-promos-dos, .message-promos-tres, .message-promos-cuatro');
     
     // Configura el mensaje
     messageDiv.textContent = `${productName} ha sido agregado al carrito.`;

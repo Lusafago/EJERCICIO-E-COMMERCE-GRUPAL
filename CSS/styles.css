@@ -107,6 +107,20 @@ button:hover {
     transition: opacity 0.5s ease;
     display: none; 
 }
+.message-promos-dos, .message-promos-cuatro {
+    margin-top: 10px;
+    color: rgb(245, 248, 245);
+    font-weight: bold; 
+    transition: opacity 0.5s ease;
+    display: none; 
+}
+.message-promos-uno, .message-promos-tres {
+    margin-top: 10px;
+    color: rgb(8, 8, 8);
+    font-weight: bold; 
+    transition: opacity 0.5s ease;
+    display: none; 
+}
 
 /**/
 
