@@ -1,3 +1,11 @@
+// Función para actualizar el contador del carrito
+function updateCartCounter() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartCounter = document.getElementById('cart-counter');
+
+    // Actualiza el contador con la cantidad de productos
+    cartCounter.textContent = cart.length;
+}
 
 // Función para agregar productos al carrito
 function addToCart(productName, price, button) {
@@ -5,6 +13,9 @@ function addToCart(productName, price, button) {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.push({ name: productName, price: price });
     localStorage.setItem('cart', JSON.stringify(cart));
+
+    // Actualiza el contador del carrito
+    updateCartCounter();
 
     // Selecciona el div de mensaje correspondiente
     const messageDiv = button.closest('.col-12').querySelector('.message, .message-promos-uno, .message-promos-dos, .message-promos-tres, .message-promos-cuatro');
@@ -22,7 +33,6 @@ function addToCart(productName, price, button) {
         }, 500); 
     }, 2000);
 }
-
 
 /* Función para mostrar el carrito: los datos del carrito se guardan localmente en el 
 dispositivo del usuario utilizando localStorage, 
@@ -69,6 +79,9 @@ function displayCart() {
 
     // Actualizar el total
     cartTotal.textContent = total;
+
+    // Actualiza el contador del carrito después de mostrarlo
+    updateCartCounter();
 }
 
 // Función para eliminar un producto del carrito
@@ -88,6 +101,7 @@ function removeFromCart(index) {
 // Vaciar el carrito
 function clearCart() {
     localStorage.removeItem('cart');
+    updateCartCounter(); // Asegúrate de actualizar el contador al vaciar el carrito
     displayCart();
 }
 
@@ -111,4 +125,16 @@ if (window.location.pathname.includes('carrito.html')) {
 
     // Asociar el botón de pagar con su función
     document.getElementById('pay-btn').addEventListener('click', handlePaymentRedirect);
+
+    // Actualiza el contador al cargar la página de carrito
+    updateCartCounter();
 }
+
+// Inicializar el contador al cargar la página
+window.onload = function() {
+    // Si el carrito no existe en localStorage, lo inicializamos como un array vacío
+    if (!localStorage.getItem('cart')) {
+        localStorage.setItem('cart', JSON.stringify([]));
+    }
+    updateCartCounter(); // Actualiza el contador cuando se carga la página
+};

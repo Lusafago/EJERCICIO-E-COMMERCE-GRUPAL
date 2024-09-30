@@ -6,10 +6,56 @@
     /* Asegura que el padding y el borde se incluyan en el ancho y alto total */
 }
 
-/*seccion de carrito*/
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+
+/* Ajustes para el contenedor del carrito */
+
+.cart-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 6px;
+}
+/* Estilos del ícono del carrito */
+.cart-carrito img {
+    width: 30px; /* Tamaño del ícono, ajusta según tus necesidades */
+    height: 30px;
+    
+    
+}
+
+/* Estilos para el contador */
+#cart-counter {
+    position: relative;
+    top: -12px;
+    right: 8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    min-width: 20px;
+    text-align: center;
+    z-index: 10;
+    display: inline-block;
+}
+
+
+
 /* Contenedor que centrará la tabla */
 .cart-container {
-    width: 80%; /* Ajusta el ancho según lo necesites */
+    width: 80%;
     max-width: 800px;
     margin: 0 auto;
     background-color: white;
@@ -25,7 +71,8 @@ table {
     margin-bottom: 20px;
 }
 
-th, td {
+th,
+td {
     text-align: center;
     padding: 12px;
     border-bottom: 1px solid #ddd;
@@ -45,6 +92,7 @@ th {
 #cart-list div {
     margin: 10px 0;
 }
+
 #clear-cart {
     background-color: #de04f1;
     color: white;
@@ -55,9 +103,11 @@ th {
     font-size: 16px;
     font-weight: bold;
 }
+
 #clear-cart:hover {
-background-color: black;
+    background-color: black;
 }
+
 #pay-btn {
     background-color: #4CAF50;
     color: white;
@@ -68,13 +118,15 @@ background-color: black;
     font-size: 16px;
     font-weight: bold;
 }
-#pay-btn:hover{
-    background-color:  #f5b714;
+
+#pay-btn:hover {
+    background-color: #f5b714;
     color: black;
 }
 
 button {
-    background-color: #f44336; /* Rojo para eliminar */
+    background-color: #f44336;
+    /* Rojo para eliminar */
     color: white;
     border-radius: 5px;
     border: none;
@@ -88,6 +140,7 @@ button:hover {
     background-color: #080000;
     color: white;
 }
+
 /* Estilo del contenedor de pago */
 .payment-container {
     display: flex;
@@ -101,18 +154,20 @@ button:hover {
     color: white;
     font-weight: bold;
 }
+
 #card-payment:hover {
-    background-color:black;
+    background-color: black;
     color: white;
 }
 
-#cash-payment{
-    background-color:#4CAF50;
+#cash-payment {
+    background-color: #4CAF50;
     color: white;
-    font-weight: bold; 
+    font-weight: bold;
 }
+
 #cash-payment:hover {
-    background-color:black;
+    background-color: black;
     color: white;
 }
 
@@ -121,11 +176,11 @@ button:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color:#e0a800;
+    background-color: #e0a800;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-top: 20px;  
+    margin-top: 20px;
     font-size: 2.3rem;
     font-family: "Coiny", system-ui;
     font-weight: 400;
@@ -136,63 +191,59 @@ button:hover {
 .message {
     margin-top: 10px;
     color: green;
-    font-weight: bold; 
+    font-weight: bold;
     transition: opacity 0.5s ease;
-    display: none; 
+    display: none;
 }
-.message-promos-dos, .message-promos-cuatro {
+
+.message-promos-dos,
+.message-promos-cuatro {
     margin-top: 10px;
     color: rgb(245, 248, 245);
-    font-weight: bold; 
+    font-weight: bold;
     transition: opacity 0.5s ease;
-    display: none; 
+    display: none;
 }
-.message-promos-uno, .message-promos-tres {
+
+.message-promos-uno,
+.message-promos-tres {
     margin-top: 10px;
     color: rgb(8, 8, 8);
-    font-weight: bold; 
+    font-weight: bold;
     transition: opacity 0.5s ease;
-    display: none; 
+    display: none;
 }
 
 /**/
 
-body {
-
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-
-}
 
 
 /*ESTILOS DEL HEADER*/
 /* Asegura que el header se expanda con el contenido */
 header {
-    background-color: #1a1617d1;
+    background-color: #1a1617;
     color: #ffffff;
-    padding: 15px;
+    padding: auto;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* Permite que los elementos dentro del header se acomoden en varias líneas si es necesario */
     overflow: visible;
     /* Asegura que el contenido adicional sea visible y no genere scroll */
 }
 
 /* Margen derecho del logo */
-header .navbar-brand {
-    margin-right: 20px;
+.navbar-brand img {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+
+
 }
 
 /* Barra de navegación */
-/* Asegura que el menú desplegable no genere scroll al expandirse */
+
 nav {
-    background-color: #1a1617d1;
+    background-color: #1a1617;
     padding: 5px;
     flex-grow: 1;
     height: auto;
@@ -207,6 +258,7 @@ nav {
 
 
 nav ul {
+
     list-style: none;
     margin: 0;
     padding: 0;
@@ -223,6 +275,7 @@ nav ul li a {
 }
 
 nav .nav-link {
+
     font-size: 1.2rem;
     color: #fff;
 }
@@ -232,6 +285,7 @@ nav .nav-link:hover {
 }
 
 .navbar-nav {
+
     flex-direction: row;
     justify-content: first baseline;
     width: 100%;
@@ -244,6 +298,7 @@ nav .nav-link:hover {
 
 .navbar-nav .nav-item {
     margin-left: 20px;
+
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -400,28 +455,11 @@ LOS TEXTOS LATERALES*/
     width: 50%;
 }
 
-/*ANIMACION DE ZOOM: 
-
-.burger-animation-1 {
-    animation: scaleUp 2s ease-in-out;
-}
-
-@keyframes scaleUp {
-    0% {
-        transform: scale(0.5);
-    }
-    100% {
-        transform: scale(1);
-    }
-}*/
-
-
-
 
 /*ESTILOS DEL FORMULARIO*/
 .form-background {
     width: 80%;
-    background-color: #ffcc00;
+    background-color: #f5da70;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -430,13 +468,13 @@ LOS TEXTOS LATERALES*/
 
 }
 
-.title-form  {
-    background-color: #fafaf8;
+.title-form {
+    padding-bottom: 15px;
     border-radius: 10px;
 }
 
 #main-contacto {
-    background-color: #de04f1;
+    background-color: white;
 
 }
 
@@ -445,7 +483,8 @@ LOS TEXTOS LATERALES*/
     color: white;
     font-weight: bold;
 }
-.btn-form:hover{
+
+.btn-form:hover {
     background-color: #4CAF50;
     color: white;
 }
@@ -492,7 +531,7 @@ LOS TEXTOS LATERALES*/
 
 /*ESTILOS DEL FOOTER*/
 footer {
-    background-color: #333;
+    background-color: #1a1617;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -503,7 +542,7 @@ footer {
 
 .redes img {
     display: inline-block;
-   
+
     gap: 10px;
 }
 
@@ -669,8 +708,10 @@ lo que permite identificar el envío de spam.  */
 }
 
 .btn-volver {
-    width: 100%; /* Cambia el ancho al 100% para que ocupe todo el espacio disponible */
-    max-width: 300px; /* Establece un ancho máximo para evitar que sea demasiado grande en pantallas grandes */
+    width: 100%;
+    /* Cambia el ancho al 100% para que ocupe todo el espacio disponible */
+    max-width: 300px;
+    /* Establece un ancho máximo para evitar que sea demasiado grande en pantallas grandes */
     text-align: center;
     background-color: #007ebb;
     border-color: #007ebb;
@@ -682,9 +723,11 @@ lo que permite identificar el envío de spam.  */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px auto; /* Centro el botón con margen automático */
+    margin: 10px auto;
+    /* Centro el botón con margen automático */
     transition: background-color 0.3s ease;
-    padding: 10px; /* Añadir algo de padding para mejor apariencia */
+    padding: 10px;
+    /* Añadir algo de padding para mejor apariencia */
 }
 
 
