@@ -27,12 +27,14 @@ body {
     position: relative;
     padding: 6px;
 }
+
 /* Estilos del ícono del carrito */
 .cart-carrito img {
-    width: 30px; /* Tamaño del ícono, ajusta según tus necesidades */
+    width: 30px;
+    /* Tamaño del ícono, ajusta según tus necesidades */
     height: 30px;
-    
-    
+
+
 }
 
 /* Estilos para el contador */
@@ -632,6 +634,7 @@ lo que permite identificar el envío de spam.  */
 
 }
 
+
 /* Botones en las tarjetas */
 
 .btn-primary:hover {
@@ -775,20 +778,48 @@ lo que permite identificar el envío de spam.  */
         margin-top: 10px;
     }
 
-    /* Asegura que el contenedor no tenga límite de altura en pantallas pequeñas */
+   
     .collapse {
         height: auto;
-        /* Permite que la altura se ajuste al contenido */
         overflow: visible;
         /* Evita el scroll */
     }
 }
 
+     /* media querys */
+
 @media (max-width: 767px) {
     .burger-section {
         flex-direction: column;
-        /* Cambia a column en pantallas más pequeñas */
         align-items: center;
-        /* Centrar elementos cuando están apilados */
+ 
     }
+    .card-promos {
+        height: 100%;
+       }
+}
+
+@media (max-width: 575px) {
+    #main-index {
+        background: black;
+
+    }
+
+    .burger-section .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .text-side h3, .epigrafe-izq, .epigrafe-der {
+        color:#e0a800;
+    }
+    .titulo-promociones h2 {
+        background: linear-gradient(to right, #ffcc00 50%, #de04f1 50%);
+        width: 100%;
+        color: black;
+        margin-top: 10px;
+    }
+  
 }
