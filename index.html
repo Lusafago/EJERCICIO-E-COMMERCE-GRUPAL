@@ -22,7 +22,7 @@
     <!---->
     <header>
         <a class="navbar-brand" href="index.html">
-            <img src="./IMG/logo.jpg" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+            <img src="./IMG/logo.jpg" alt="Logo" class="d-inline-block align-text-top">
         </a>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -38,8 +38,11 @@
                         <a class="nav-link" href="categorias.html">Categorías</a>
                         <a class="nav-link" href="#perfil">Sobre Nosotros</a>
                         <a class="nav-link" href="contacto.html">Contacto</a>
-                        <a class="btn btn-warning" href="carrito.html">
-                            <i class="fas fa-shopping-cart"></i> Pedido
+                        <a class="btn" href="carrito.html">
+                            <div class="cart-carrito">
+                                <img src="./IMG/carrito.png" alt="icono de carrito de compras">
+                                <span id="cart-counter" class="badge rounded-pill bg-danger">0</span>
+                            </div>
                         </a>
 
                     </div>
@@ -125,8 +128,9 @@
                                 <h5 class="card-title">PROMO 1</h5>
                                 <p class="card-text">Elegi un postre a tan solo $3000.</p>
                                 <button class="btn btn-primary"
-                                onclick="addToCart('Promo 1 Postre a eleccion', 3000, this)">Agregar al carrito</button>
-                        
+                                    onclick="addToCart('Promo 1 Postre a eleccion', 3000, this)">Agregar al
+                                    carrito</button>
+
                             </div>
                         </div>
                         <div class="message-promos-uno"></div>
@@ -140,8 +144,9 @@
                                 <h5 class="card-title">PROMO 2</h5>
                                 <p class="card-text">Disfruta de ESTA PROMO por $9000.</p>
                                 <button class="btn btn-primary"
-                                onclick="addToCart('Promo 2 Burguer compl. + licuado', 9000, this)">Agregar al carrito</button>
-                        
+                                    onclick="addToCart('Promo 2 Burguer compl. + licuado', 9000, this)">Agregar al
+                                    carrito</button>
+
                             </div>
                         </div>
                         <div class="message-promos-dos"></div>
@@ -155,7 +160,8 @@
                                 <h5 class="card-title">PROMO 3</h5>
                                 <p class="card-text">Te regalamos el postre!</p>
                                 <button class="btn btn-primary"
-                                onclick="addToCart('Promo 3 + postre gratis', 10000, this)">Agregar al carrito</button>
+                                    onclick="addToCart('Promo 3 + postre gratis', 10000, this)">Agregar al
+                                    carrito</button>
                             </div>
                         </div>
                         <div class="message-promos-tres"></div>
@@ -169,8 +175,8 @@
                                 <h5 class="card-title">PROMO 4</h5>
                                 <p class="card-text">Disfruta de ESTA PROMO por $2500.</p>
                                 <button class="btn btn-primary"
-                                onclick="addToCart('Promo 4 pastas', 2500, this)">Agregar al carrito</button>
-                        
+                                    onclick="addToCart('Promo 4 pastas', 2500, this)">Agregar al carrito</button>
+
                             </div>
                         </div>
                         <div class="message-promos-cuatro"></div>
@@ -190,8 +196,8 @@
                         hamburguesas, postres y bebidas,
                         utilizando ingredientes frescos para crear platos deliciosos.
                         ¡Descubrí por qué Lusafast-food es el lugar ideal para satisfacer tus antojos!</p>
-                    <a href="https://github.com/Lusafago/EJERCICIO-E-COMMERCE-GRUPAL" class="btn btn-warning">Ver
-                        más</a>
+                    <button class="btn btn-secondary mt-3 btn-volver" onclick="goBack()">Volver</button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -199,7 +205,7 @@
     </main>
 
 
-    <footer class="bg-dark text-light py-4">
+    <footer class="text-light py-4">
         <div class="container">
             <div class="row">
 
@@ -244,6 +250,7 @@
         crossorigin="anonymous"></script>
     <script src="./JS/main.js"></script>
     <script src="./JS/carrito.js"></script>
+    <script src="./JS/pago.js"></script>
 </body>
 
 
