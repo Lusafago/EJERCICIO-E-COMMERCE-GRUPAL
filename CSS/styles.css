@@ -18,178 +18,7 @@ body {
 
 }
 
-/* Ajustes para el contenedor del carrito */
-
-.cart-carrito {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    padding: 6px;
-}
-
-/* Estilos del ícono del carrito */
-.cart-carrito img {
-    width: 30px;
-    /* Tamaño del ícono, ajusta según tus necesidades */
-    height: 30px;
-
-
-}
-
-/* Estilos para el contador */
-#cart-counter {
-    position: relative;
-    top: -12px;
-    right: 8px;
-    background-color: red;
-    color: white;
-    font-size: 12px;
-    padding: 2px 6px;
-    border-radius: 50%;
-    min-width: 20px;
-    text-align: center;
-    z-index: 10;
-    display: inline-block;
-}
-
-
-
-/* Contenedor que centrará la tabla */
-.cart-container {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-/* Estilo para la tabla */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-th,
-td {
-    text-align: center;
-    padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-.product-card {
-
-    border: 1px solid #ccc;
-    padding: 16px;
-    margin-bottom: 16px;
-}
-
-#cart-list div {
-    margin: 10px 0;
-}
-
-#clear-cart {
-    background-color: #de04f1;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-#clear-cart:hover {
-    background-color: black;
-}
-
-#pay-btn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-#pay-btn:hover {
-    background-color: #f5b714;
-    color: black;
-}
-
-button {
-    background-color: #f44336;
-    /* Rojo para eliminar */
-    color: white;
-    border-radius: 5px;
-    border: none;
-    padding: 5px 10px;
-    margin: 10px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-button:hover {
-    background-color: #080000;
-    color: white;
-}
-
-/* Estilo del contenedor de pago */
-.payment-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 50px auto;
-}
-
-#card-payment {
-    background-color: #007ebb;
-    color: white;
-    font-weight: bold;
-}
-
-#card-payment:hover {
-    background-color: black;
-    color: white;
-}
-
-#cash-payment {
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-}
-
-#cash-payment:hover {
-    background-color: black;
-    color: white;
-}
-
-#payment-message {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #e0a800;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-top: 20px;
-    font-size: 2.3rem;
-    font-family: "Coiny", system-ui;
-    font-weight: 400;
-    font-style: normal;
-
-}
-
+/*Estilos de clases de JS*/
 .message {
     margin-top: 10px;
     color: green;
@@ -216,12 +45,9 @@ button:hover {
     display: none;
 }
 
-/**/
-
-
 
 /*ESTILOS DEL HEADER*/
-/* Asegura que el header se expanda con el contenido */
+
 header {
     background-color: #1a1617;
     color: #ffffff;
@@ -233,7 +59,7 @@ header {
     /* Asegura que el contenido adicional sea visible y no genere scroll */
 }
 
-/* Margen derecho del logo */
+/*BARRA DE NAVEGACION */
 .navbar-brand img {
     width: 150px;
     height: 150px;
@@ -241,8 +67,6 @@ header {
 
 
 }
-
-/* Barra de navegación */
 
 nav {
     background-color: #1a1617;
@@ -322,250 +146,6 @@ nav .nav-link:hover {
 
 }
 
-/*****************************************/
-
-
-/*MAIN*/
-
-#main-index {
-
-    flex-grow: 1;
-    background: linear-gradient(to right, #ffcc00 50%, #de04f1 50%);
-    margin-bottom: 0;
-}
-
-
-main h2 {
-    margin-top: 0;
-}
-
-
-
-/*Burger Section: ESTILOS APLICADOS A LA SECCION CENTRAL DONDE ESTA LA IMG DE LA HAMBURGUESA Y 
-LOS TEXTOS LATERALES*/
-
-/* ESTO ES EL CONTENEDOR DONDE ESTA LA IMG CENTRAL DE LA HAMBURGUESA*/
-.burger-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-/*ESTA ES LA CLASE DEL DIV QUE CONTIENE LA IMG DE LA HAMBURGUESA*/
-.burger-central {
-    flex-grow: 2;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-/*imagen de hamburguesa central*/
-.burger-central img {
-    width: 90%;
-    height: auto;
-
-}
-
-/* ANIMACION DE GIRAR:*/
-.burger-animation-2:hover {
-    animation: spin 4s ease-out;
-
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-
-/* ESTOS SON LOS ESTILOS DE LOS TEXTOS LATERALES*/
-
-/*contenedores de los textos laterales*/
-.text-side {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 300px;
-}
-
-.text-side img {
-
-    height: auto;
-
-}
-
-
-/*h3 de textos laterales*/
-.text-side h3 {
-
-    font-size: 2.3rem;
-    font-family: "Coiny", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.text-side h4 {
-
-    font-size: 2rem;
-    font-family: "Playwrite DE Grund", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-/*parrafos de textos laterales*/
-.text-side p {
-
-    line-height: 1.5;
-    font-size: 1.5rem;
-    font-family: "Playwrite DE Grund", cursive;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
-
-.epigrafe-der {
-    color: #fff;
-}
-
-.epigrafe-izq {
-    color: #0a0000;
-}
-
-/*texto derecho*/
-.txt-der {
-    color: #fbff00;
-
-}
-
-/*texto izquierdo*/
-.txt.izq {
-    color: #de04f1;
-}
-
-.burger-uno,
-.pasta-dos,
-.papas-tres {
-    width: 50%;
-}
-
-
-/*ESTILOS DEL FORMULARIO*/
-.form-background {
-    width: 80%;
-    background-color: #f5da70;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    font-weight: bold;
-
-}
-
-.title-form {
-    padding-bottom: 15px;
-    border-radius: 10px;
-}
-
-#main-contacto {
-    background-color: white;
-
-}
-
-.btn-form {
-    background-color: #007ebb;
-    color: white;
-    font-weight: bold;
-}
-
-.btn-form:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
-
-/* Perfil */
-.section-perfil {
-    background-color: #160218;
-    padding: 20px;
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#perfil .card {
-    background-color: transparent;
-    border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    height: 100%;
-}
-
-#perfil .card-img-top {
-    width: 50%;
-    height: auto;
-}
-
-#perfil .card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-#perfil .card-text {
-    font-size: 1rem;
-    color: #ccc;
-}
-
-/* Botón */
-#perfil .btn-warning {
-    background-color: #ffc107;
-    border-color: #ffc107;
-}
-
-
-/*ESTILOS DEL FOOTER*/
-footer {
-    background-color: #1a1617;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: auto;
-    position: relative;
-    clear: both;
-}
-
-.redes img {
-    display: inline-block;
-
-    gap: 10px;
-}
-
-.redes a {
-    color: #fff;
-    font-size: 2rem;
-    text-decoration: none;
-}
-
-.redes a:hover {
-    color: #ffcc00;
-}
-
-/* "Honeypot" (que significa "tarro de miel") es una técnica de seguridad.
- 
-* Protección anti-spam: Se usa para atrapar bots que intentan enviar formularios de manera automatizada.
-* Campo oculto- display: none: Los usuarios normales no lo ven, pero los bots tienden a llenarlo, 
-lo que permite identificar el envío de spam.  */
-.honeypot {
-    display: none;
-}
 
 /*CONTAINER DE LA SECCION PROMOCIONES*/
 #container {
@@ -634,18 +214,6 @@ lo que permite identificar el envío de spam.  */
 
 }
 
-
-/* Botones en las tarjetas */
-
-.btn-primary:hover {
-    background-color: #e0a800;
-    /* Color más oscuro al pasar el mouse */
-    border-color: #e0a800;
-    /* Color del borde al pasar el mouse */
-}
-
-
-
 /*carrusel*/
 .carousel {
     width: 100vw;
@@ -692,53 +260,7 @@ lo que permite identificar el envío de spam.  */
     object-fit: cover;
 }
 
-/*cards de categorias*/
-
-.card-categoria {
-    width: 100%;
-    max-width: 320px;
-    height: 550px;
-    margin: 5px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-categoria img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.btn-volver {
-    width: 100%;
-    /* Cambia el ancho al 100% para que ocupe todo el espacio disponible */
-    max-width: 300px;
-    /* Establece un ancho máximo para evitar que sea demasiado grande en pantallas grandes */
-    text-align: center;
-    background-color: #007ebb;
-    border-color: #007ebb;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-    /* Centro el botón con margen automático */
-    transition: background-color 0.3s ease;
-    padding: 10px;
-    /* Añadir algo de padding para mejor apariencia */
-}
-
-
-.btn-volver:hover {
-    background-color: black;
-    margin: 0 auto;
-    transition: background-color 0.3s ease;
-}
+/*cards del index y de perfil*/
 
 .card-index {
     width: 100%;
@@ -754,12 +276,9 @@ lo que permite identificar el envío de spam.  */
     overflow: hidden;
 }
 
-/*estilos de pago*/
 
 
-
-/* Media query para pantallas pequeñas */
-/* Estilos para el menú desplegable en dispositivos móviles o colapsado */
+/*media querys*/
 @media (max-width: 992px) {
 
     /* Asegura que el nav se expanda verticalmente y sin scroll en pantallas pequeñas */

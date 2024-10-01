@@ -1,0 +1,24 @@
+.product-card {
+
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+/*cards de categorias*/
+
+.card-categoria {
+    width: 100%;
+    max-width: 320px;
+    height: 550px;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-categoria img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}

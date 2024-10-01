@@ -1,0 +1,56 @@
+button {
+    background-color: #f44336;
+    /* Rojo para eliminar */
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #080000;
+    color: white;
+}
+
+.btn-volver {
+    width: 100%;
+    /* Cambia el ancho al 100% para que ocupe todo el espacio disponible */
+    max-width: 300px;
+    /* Establece un ancho máximo para evitar que sea demasiado grande en pantallas grandes */
+    text-align: center;
+    background-color: #007ebb;
+    border-color: #007ebb;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    /* Centro el botón con margen automático */
+    transition: background-color 0.3s ease;
+    padding: 10px;
+    /* Añadir algo de padding para mejor apariencia */
+}
+
+
+.btn-volver:hover {
+    background-color: black;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+/* Botones en las tarjetas */
+
+.btn-primary:hover {
+    background-color: #e0a800;
+    /* Color más oscuro al pasar el mouse */
+    border-color: #e0a800;
+    /* Color del borde al pasar el mouse */
+}
+

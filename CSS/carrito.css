@@ -1,0 +1,100 @@
+.cart-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#cart-list div {
+    margin: 10px 0;
+}
+
+#clear-cart {
+    background-color: #de04f1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#clear-cart:hover {
+    background-color: black;
+}
+
+/* Ajustes para el contenedor del carrito */
+
+.cart-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 6px;
+}
+
+/* Estilos del ícono del carrito */
+.cart-carrito img {
+    width: 30px;
+    /* Tamaño del ícono, ajusta según tus necesidades */
+    height: 30px;
+
+
+}
+
+/* Estilos para el contador */
+#cart-counter {
+    position: relative;
+    top: -12px;
+    right: 8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    min-width: 20px;
+    text-align: center;
+    z-index: 10;
+    display: inline-block;
+}
+
+/* Contenedor que centrará la tabla */
+
+/* Estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#pay-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#pay-btn:hover {
+    background-color: #f5b714;
+    color: black;
+}
+
