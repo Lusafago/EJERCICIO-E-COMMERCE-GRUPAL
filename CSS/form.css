@@ -1,0 +1,41 @@
+
+/*ESTILOS DEL FORMULARIO*/
+.form-background {
+    width: 80%;
+    background-color: #f5da70;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    font-weight: bold;
+
+}
+
+.title-form {
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+
+#main-contacto {
+    background-color: white;
+
+}
+
+.btn-form {
+    background-color: #007ebb;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-form:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+/* "Honeypot" (que significa "tarro de miel") es una técnica de seguridad.
+ 
+* Protección anti-spam: Se usa para atrapar bots que intentan enviar formularios de manera automatizada.
+* Campo oculto- display: none: Los usuarios normales no lo ven, pero los bots tienden a llenarlo, 
+lo que permite identificar el envío de spam.  */
+.honeypot {
+    display: none;
+}

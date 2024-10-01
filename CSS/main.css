@@ -1,0 +1,130 @@
+/*MAIN*/
+
+#main-index {
+
+    flex-grow: 1;
+    background: linear-gradient(to right, #ffcc00 50%, #de04f1 50%);
+    margin-bottom: 0;
+}
+
+
+main h2 {
+    margin-top: 0;
+}
+
+/*Burger Section: ESTILOS APLICADOS A LA SECCION CENTRAL DONDE ESTA LA IMG DE LA HAMBURGUESA Y 
+LOS TEXTOS LATERALES*/
+
+/* ESTO ES EL CONTENEDOR DONDE ESTA LA IMG CENTRAL DE LA HAMBURGUESA*/
+.burger-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/*ESTA ES LA CLASE DEL DIV QUE CONTIENE LA IMG DE LA HAMBURGUESA*/
+.burger-central {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/*imagen de hamburguesa central*/
+.burger-central img {
+    width: 90%;
+    height: auto;
+
+}
+
+/* ANIMACION DE GIRAR:*/
+.burger-animation-2:hover {
+    animation: spin 4s ease-out;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ESTOS SON LOS ESTILOS DE LOS TEXTOS LATERALES*/
+
+/*contenedores de los textos laterales*/
+.text-side {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+}
+
+.text-side img {
+
+    height: auto;
+
+}
+
+
+/*h3 de textos laterales*/
+.text-side h3 {
+
+    font-size: 2.3rem;
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-side h4 {
+
+    font-size: 2rem;
+    font-family: "Playwrite DE Grund", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*parrafos de textos laterales*/
+.text-side p {
+
+    line-height: 1.5;
+    font-size: 1.5rem;
+    font-family: "Playwrite DE Grund", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.epigrafe-der {
+    color: #fff;
+}
+
+.epigrafe-izq {
+    color: #0a0000;
+}
+
+/*texto derecho*/
+.txt-der {
+    color: #fbff00;
+
+}
+
+/*texto izquierdo*/
+.txt.izq {
+    color: #de04f1;
+}
+
+.burger-uno,
+.pasta-dos,
+.papas-tres {
+    width: 50%;
+}
+
