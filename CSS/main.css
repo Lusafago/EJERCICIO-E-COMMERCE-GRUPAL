@@ -128,3 +128,41 @@ LOS TEXTOS LATERALES*/
     width: 50%;
 }
 
+     /* media querys */
+
+     @media (max-width: 767px) {
+        .burger-section {
+            flex-direction: column;
+            align-items: center;
+     
+        }
+        .card-promos {
+            height: 100%;
+           }
+    }
+    
+    @media (max-width: 575px) {
+        #main-index {
+            background: black;
+    
+        }
+    
+        .burger-section .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: auto;
+        }
+        .text-side h3, .epigrafe-izq, .epigrafe-der {
+            color:#e0a800;
+        }
+        .titulo-promociones h2 {
+            background: linear-gradient(to right, #ffcc00 50%, #de04f1 50%);
+            width: 100%;
+            color: black;
+            margin-top: 10px;
+        }
+      
+    }
+
