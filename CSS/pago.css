@@ -1,46 +1,101 @@
-/* Estilo del contenedor de pago */
+/* Ajuste del tamaño del icono success de SweetAlert2 */
+.swal2-popup .swal2-success {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.swal2-popup .swal2-success .swal2-success-ring {
+    width: 80px;
+    height: 80px;
+    border-width: 5px;
+}
+
+.swal2-popup .swal2-success .swal2-success-fix {
+    width: 80px;
+    height: 80px;
+}
+
+.swal2-popup .swal2-success .swal2-success-circular-line-left, 
+.swal2-popup .swal2-success .swal2-success-circular-line-right {
+    height: 80px;
+}
+
+/* Elimina el desbordamiento de scroll */
+.swal2-popup {
+    overflow: hidden; 
+}
+
+
+
+
+/* Ajuste del contenedor principal usando Grid */
 .payment-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;  /* Coloca los elementos en una sola columna por defecto */
+    gap: 20px;
+    justify-items: center;  /* Asegura que todo esté centrado horizontalmente */
+    margin: 10px auto;
     text-align: center;
-    margin: 50px auto;
+    overflow: hidden;
+}
+
+
+/* Estilos para los elementos de pago */
+.payment-container div {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;     
+    margin: 15px;
+    overflow: hidden;
+    
+}
+
+/* Estilos de los botones de pago */
+#card-payment, #cash-payment {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 5px; 
+
 }
 
 #card-payment {
-    background-color: #007ebb;
+    background-color: #990f39;
     color: white;
-    font-weight: bold;
 }
 
 #card-payment:hover {
-    background-color: black;
-    color: white;
+    background-color: #420618;
 }
 
 #cash-payment {
-    background-color: #4CAF50;
+    background-color: #1c7f2f;
     color: white;
-    font-weight: bold;
 }
 
 #cash-payment:hover {
-    background-color: black;
-    color: white;
+    background-color: #10441a;
 }
 
-#payment-message {
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #e0a800;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-top: 20px;
-    font-size: 2.3rem;
-    font-family: "Coiny", system-ui;
-    font-weight: 400;
-    font-style: normal;
+/* Estilo de las imágenes de métodos de pago */
+.payment-container img {
+    width: 200px;
+    margin-bottom: 10px; 
+    overflow: hidden;
+}
 
+
+
+/* Dos columnas para pantallas medianas */
+
+@media (min-width: 768px) {
+    .payment-container {
+        grid-template-columns: repeat(2, 1fr);  
+    }
 }
